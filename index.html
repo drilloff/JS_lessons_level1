@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+    // задание 1
+alert('Задание №1')
+var Tc = parseInt(prompt("Введите температуру в градусах Цельсия"));
+var Tf;
+function temp (tc) {
+    Tf=(9 / 5) * tc + 32;
+    return alert("Температура в градусах по Фаренгейту: " + Tf)
+}
+temp (Tc);
+    
+    // задание 2-а
+alert('Задание №2-a')
+var name = prompt("Введите любое имя, например, Василий");
+    function adminVasiliy(Name){
+        return alert ('Нашего админа зовут '+Name)
+    }
+adminVasiliy (name);
+var admin = adminVasiliy;
+    
+    // задание 2-b
+alert('Задание №2-b')
+var a = 20;
+var b = 30;
+function change(A,B) {
+    B=A+B;
+    A=B-A;
+    B=B-A;
+    return console.log(A, B)
+}
+change (a,b);
+</script>
+</body>
+</html>
